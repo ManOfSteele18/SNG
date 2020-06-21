@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='UTF-8'>
+		<meta name='viewport' content ='width = device-width, initial-scale = 1.0'>
+		<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="CSS/styles.css">
+		<script src="JS/sng.js"></script>
+		<title>Superhero Name Generator</title>
+	</head>
+	<body>
+		<header>
+			<h1>Superhero Name Generator!</h1>
+		</header>
+		<main id='userInput'>
+			<form onsubmit="return false">
+				<label for='initials'>Your Initials: </label>
+				<input type='text' id='initials' required/>
+				<label for='age'>Age: </label>
+				<input type="number" min="1" step="1" id='age' required/>
+				<button id='generateButton'>Generate Superhero Name</button>
+			</form>
+		</main>
+		<section id='resultSection'>
+			<img id='resultImg' src='https://www.onlygfx.com/wp-content/uploads/2017/01/comic-explosion-bubble-5-768x507.png'>
+			<div id='resultTextBox'>
+				<p id='resultText'></p>
+			</div>
+		</section>
+		<section id='filler'></section>
+		<footer>
+			Made by Paul Steele in June, 2020
+		</footer>
+	</body>
+</html>
